@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мастер и Маргарита - KnigaMag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo">KM</div>
+            <div class="logo-text">
+                <h1>Книжный магазин KnigaMag</h1>
+                <p>Лучшие книги для вашего вдохновения</p>
+            </div>
+        </div>
+        
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <hr>
+    
+    <div class="container">
+        <h2>Мастер и Маргарита</h2>
+        
+        <div class="book-detail">
+            <div class="book-image">
+                <img src="https://basket-32.wbbasket.ru/vol6749/part674915/674915663/images/big/1.webp" 
+                     alt="Обложка книги Мастер и Маргарита" 
+                     width="300"
+                     onclick="openImageInNewWindow(this.src)">
+                <p class="image-note">Нажмите на изображение для увеличения</p>
+            </div>
+            
+            <div class="book-info">
+                <div class="book-price"><strong>649 ₽</strong></div>
+                <div class="book-rating">★★★★★ 4.9/5</div>
+                
+                <button class="buy-button">Купить</button>
+                
+                <h3>Описание товара</h3>
+                <p class="short-description">«Мастер и Маргарита» — бессмертное произведение Михаила Булгакова, которое сочетает в себе философскую глубину, сатиру и мистику.</p>
+                
+                <h3>Характеристики товара</h3>
+                <ul class="book-specs">
+                    <li><strong>Автор:</strong> Михаил Булгаков</li>
+                    <li><strong>Издательство:</strong> АСТ</li>
+                    <li><strong>Год издания:</strong> 2022</li>
+                    <li><strong>Страниц:</strong> 480</li>
+                    <li><strong>Переплет:</strong> Твердый</li>
+                    <li><strong>Формат:</strong> 145x215 мм</li>
+                    <li><strong>Язык:</strong> Русский</li>
+                    <li><strong>ISBN:</strong> 978-5-17-113242-5</li>
+                    <li><strong>Вес:</strong> 650 г</li>
+                    <li><strong>Возрастные ограничения:</strong> 16+</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3>Технические характеристики</h3>
+        <table class="tech-specs-table">
+            <tr>
+                <th>Параметр</th>
+                <th>Значение</th>
+                <th>Примечание</th>
+            </tr>
+            <tr>
+                <td>Качество бумаги</td>
+                <td>Офсетная, 80 г/м²</td>
+                <td>Белизна 90%</td>
+            </tr>
+            <tr>
+                <td>Шрифт</td>
+                <td>Times New Roman, 12pt</td>
+                <td>Удобочитаемый</td>
+            </tr>
+            <tr>
+                <td>Межстрочный интервал</td>
+                <td>1.5</td>
+                <td>Оптимальный для чтения</td>
+            </tr>
+            <tr>
+                <td>Иллюстрации</td>
+                <td>Черно-белые</td>
+                <td>10 шт.</td>
+            </tr>
+            <tr>
+                <td>Прошивка</td>
+                <td>Клеевое бесшвейное скрепление</td>
+                <td>Высокая прочность</td>
+            </tr>
+            <tr>
+                <td>Сохранность</td>
+                <td>Не желтеет со временем</td>
+                <td>Специальная обработка</td>
+            </tr>
+        </table>
+        
+        <h3>Дополнительная информация об издании</h3>
+        <table class="advanced-table">
+            <tr>
+                <th rowspan="2" class="merged-vertical">Параметры издания</th>
+                <th colspan="3" class="merged-horizontal">Характеристики</th>
+                <th>Гарантия</th>
+            </tr>
+            <tr>
+                <td>Материалы</td>
+                <td>Качество</td>
+                <td>Срок службы</td>
+                <td rowspan="3" class="merged-vertical">2 года</td>
+            </tr>
+            <tr>
+                <td>Обложка</td>
+                <td>Картон + ламинация</td>
+                <td>Высокое</td>
+                <td>10+ лет</td>
+            </tr>
+            <tr>
+                <td>Блок страниц</td>
+                <td>Офсетная бумага</td>
+                <td>Среднее</td>
+                <td>5+ лет</td>
+            </tr>
+            <tr>
+                <td>Переплет</td>
+                <td colspan="3" class="merged-horizontal">Клеевое бесшвейное скрепление</td>
+                <td>1 год</td>
+            </tr>
+        </table>
+        
+        <h3>Подробное описание товара</h3>
+        <div class="detailed-description">
+            <p>Роман "Мастер и Маргарита" — самое известное и загадочное произведение Михаила Булгакова. Книга, которая существует сразу в нескольких измерениях: как сатира на советскую действительность 1930-х годов, как философская притча о вечной борьбе добра и зла, и как лирическая история о великой любви.</p>
+            
+            <p>В романе переплетаются две основные сюжетные линии: история визита дьявола (в образе профессора Воланда) в Москву 1930-х годов и события в древнем Ершалаиме, связанные с судом над Иешуа Га-Ноцри и казнью прокуратора Понтия Пилата.</p>
+        </div>
+        
+        <div class="back-to-catalog">
+            <a href="catalog.html" class="back-link">← Вернуться в каталог</a>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <footer>
+        <p>&copy; 2023 Книжный магазин "KnigaMag". Все права защищены.</p>
+    </footer>
+    
+    <script>
+        function openImageInNewWindow(imageUrl) {
+            window.open(imageUrl, '_blank', 'width=800,height=600');
+        }
+    </script>
+</body>
+</html>

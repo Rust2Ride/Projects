@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - KnigaMag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo">KM</div>
+            <div class="logo-text">
+                <h1>Книжный магазин KnigaMag</h1>
+                <p>Лучшие книги для вашего вдохновения</p>
+            </div>
+        </div>
+        
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <hr>
+    
+    <div class="container">
+        <h2>Напишите нам</h2>
+        
+        <div class="contact-form">
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div>
+                    <label for="subject">Тема:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div>
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <div>
+                    <label>
+                        <input type="checkbox" name="newsletter" checked>
+                        Подписаться на рассылку новинок и акций
+                    </label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Отправить сообщение</button>
+            </form>
+        </div>
+        
+        <hr>
+        
+        <h2>Адрес</h2>
+        <div class="contact-info">
+            <p><strong>Контактный телефон:</strong> 8 (800) 123-45-67</p>
+            <p><strong>Адрес магазина:</strong> г. Москва, ул. Книжная, д. 15</p>
+            <p><strong>Email:</strong> info@knigamag.ru</p>
+            <p><strong>Время работы:</strong> Пн-Пт: 9:00-21:00, Сб-Вс: 10:00-20:00</p>
+            <p><strong>Реквизиты:</strong> ООО "КнигаМаг", ИНН 1234567890, ОГРН 1234567890123</p>
+        </div>
+        
+        <div class="map-container">
+            <h3>Мы на карте:</h3>
+            <!-- Яндекс Карта -->
+            <iframe 
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A7c4d9b4d4b4b4b4b4b4b4b4b4b4b4b4b&amp;source=constructor" 
+                width="100%" 
+                height="374" 
+                frameborder="0">
+            </iframe>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <footer>
+        <p>&copy; 2023 Книжный магазин "KnigaMag". Все права защищены.</p>
+    </footer>
+</body>
+</html>

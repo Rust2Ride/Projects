@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог книг - KnigaMag</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Стили для кнопок нижнего меню */
+        .footer-links a {
+            background-color: #3498db; /* Синий цвет */
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            margin: 0 5px;
+            display: inline-block;
+        }
+
+        .footer-links a:hover {
+            background-color: #2980b9; /* Более темный синий при наведении */
+        }
+        
+        /* Стили для футера */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .footer-links {
+            margin: 15px 0;
+        }
+        
+        /* Базовые стили для страницы */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-right: 15px;
+        }
+        
+        .header-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        
+        .header-nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .book-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .thumbnail {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        
+        .rating {
+            color: #f39c12;
+            margin: 10px 0;
+        }
+        
+        .price {
+            color: #e74c3c;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        
+        .details-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .details-link:hover {
+            background-color: #2980b9;
+        }
+        
+        .catalog-info {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #e0e0e0;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo">KM</div>
+            <div class="logo-text">
+                <h1>Книжный магазин KnigaMag</h1>
+                <p>Лучшие книги для вашего вдохновения</p>
+            </div>
+        </div>
+        
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <hr>
+    
+    <div class="container">
+        <h2>Каталог книг</h2>
+        
+        <div class="books-grid">
+            
+            <div class="book-card">
+                <img src="https://basket-32.wbbasket.ru/vol6749/part674915/674915663/images/big/1.webp" 
+                     alt="Мастер и Маргарита" 
+                     class="thumbnail">
+                <h3>Мастер и Маргарита</h3>
+                <div class="rating">★★★★★ 4.9/5</div>
+                <div class="price"><strong>649 ₽</strong></div>
+                <a href="product1.html" class="details-link">Подробнее</a>
+            </div>
+            
+            
+            <div class="book-card">
+                <img src="https://basket-03.wbbasket.ru/vol347/part34761/34761231/images/big/1.webp" 
+                     alt="Преступление и наказание" 
+                     class="thumbnail">
+                <h3>Преступление и наказание</h3>
+                <div class="rating">★★★★★ 4.8/5</div>
+                <div class="price"><strong>589 ₽</strong></div>
+                <a href="product2.html" class="details-link">Подробнее</a>
+            </div>
+            
+           
+            <div class="book-card">
+                <img src="https://avatars.mds.yandex.net/get-mpic/13455428/2a00000196d8c522e80b6348c6a18b675d58/orig" 
+                     alt="Война и мир" 
+                     class="thumbnail">
+                <h3>Война и мир</h3>
+                <div class="rating">★★★★☆ 4.7/5</div>
+                <div class="price"><strong>1 290 ₽</strong></div>
+                <a href="product3.html" class="details-link">Подробнее</a>
+            </div>
+            
+            
+            <div class="book-card">
+                <img src="https://avatars.mds.yandex.net/get-mpic/4721581/2a00000191e62f3b2410c9c248e199ebf4ba/orig" 
+                     alt="Сто лет одиночества" 
+                     class="thumbnail">
+                <h3>Сто лет одиночества</h3>
+                <div class="rating">★★★★★ 4.8/5</div>
+                <div class="price"><strong>799 ₽</strong></div>
+                <a href="product4.html" class="details-link">Подробнее</a>
+            </div>
+            
+            
+            <div class="book-card">
+                <img src="https://ndc.book24.ru/resize/410x590/pim/products/images/06/81/0199eb6d-b31d-753f-b846-9c8e78620681.jpg" 
+                     alt="1984" 
+                     class="thumbnail">
+                <h3>1984</h3>
+                <div class="rating">★★★★★ 4.9/5</div>
+                <div class="price"><strong>550 ₽</strong></div>
+                <a href="product5.html" class="details-link">Подробнее</a>
+            </div>
+            
+           
+            <div class="book-card">
+                <img src="https://avatars.mds.yandex.net/get-mpic/16497166/2a0000019b4af77b764c2604e4f47a77af74/orig" 
+                     alt="Маленький принц" 
+                     class="thumbnail">
+                <h3>Маленький принц</h3>
+                <div class="rating">★★★★★ 4.9/5</div>
+                <div class="price"><strong>450 ₽</strong></div>
+                <a href="product6.html" class="details-link">Подробнее</a>
+            </div>
+        </div>
+        
+        
+        <div class="catalog-info">
+            <h3>О нашем каталоге</h3>
+            <p>В нашем каталоге представлены лучшие произведения мировой литературы. Мы тщательно отбираем каждое издание, чтобы предложить вам только качественные книги с отличным полиграфическим исполнением.</p>
+            <p>Все книги в наличии и готовы к отправке. Доставка по всей России занимает от 3 до 10 рабочих дней в зависимости от региона.</p>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <footer>
+        <p>&copy; 2023 Книжный магазин "KnigaMag". Все права защищены.</p>
+        <div class="footer-links">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="contacts.html">Контакты</a>
+        </div>
+    </footer>
+</body>
+</html>
